@@ -15,7 +15,7 @@ loginform.addEventListener("submit",function login(e){
     console.log(txtusername.value)
     console.log(txtpassword.value)
     console.log(chbrememberme.checked)
-    if(txtusername.value == "rpineda" && txtpassword.value=="123456"){
+    if(txtusername.value == "mia171001" && txtpassword.value=="123456"){
         console.log("login correcto")
         if(chbrememberme.checked){
             sessionStorage.setItem("login", JSON.stringify({login:true}));
@@ -23,7 +23,7 @@ loginform.addEventListener("submit",function login(e){
         else{
             sessionStorage.setItem("login", JSON.stringify({login:false}));
         }
-        window.location.replace("/Semana06Sesion02/d19423/index.html");
+        window.location.replace("index.html");
     }
 
 });
